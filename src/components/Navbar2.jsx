@@ -92,10 +92,18 @@ const Navbar2 = () => {
 						</div>
 						</div>
 						
-						<div  className="flex items-center mt-2 ">
-						<Link to="/signup"><CiLogin className="w-5 h-5" id="logout"/></Link>
-						<h1 className="ml-1 font-semibold text-sm">Login</h1>
-						</div>
+						{
+                userLoggedIn
+                    ?
+                    <div className="flex items-center mt-2" id="logout">
+						<CiLogin className="w-5 h-5"/>
+                        <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='font-semibold text-sm ml-1'>Login</button>
+                    </div>
+                    :
+                    <>
+                      
+                    </>
+            }
 						</div>
 					
 
