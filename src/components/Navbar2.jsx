@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from "../contexts/authContext";
 import { doSignOut } from "../firebase/auth";
 import { Link } from "react-router-dom";
+import { CiLogin } from "react-icons/ci";
 
 
 
@@ -85,15 +86,15 @@ const Navbar2 = () => {
 							</a>
 						</li>
 						
-						<div className="border-t-2 border-t-transparent">
-						<div className="flex gap-2 md:mt-32 border-b-2 mt-20 pb-2">
-							<div className="flex gap-3 mt-40 md:mt-80">
+					<div className="border-t-2 border-t-transparent mt-64 ">
+						<div className="flex gap-2  border-b-2  pb-2 mt-5">
+							<div className="flex gap-3  ">
 						</div>
 						</div>
 						
-						<div  className="flex items-center mt-2">
-						<Link to="/signup"><CiLogout className="w-5 h-5" id="logout"/></Link>
-						<h1 className="ml-1 font-semibold text-sm">Logout</h1>
+						<div  className="flex items-center mt-2 ">
+						<Link to="/signup"><CiLogin className="w-5 h-5" id="logout"/></Link>
+						<h1 className="ml-1 font-semibold text-sm">Login</h1>
 						</div>
 						</div>
 					
