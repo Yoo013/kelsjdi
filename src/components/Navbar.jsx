@@ -94,7 +94,7 @@ const Navbar = () => {
 						</div>
 						
 						<div  className="flex items-center mt-2">
-						<Link to="/login"><CiLogout className="w-5 h-5" id="logout"/></Link>
+						<Link to="/"><CiLogout className="w-5 h-5" id="logout"/></Link>
 						<h1 className="ml-1 font-semibold text-sm">Logout</h1>
 						</div>
 						</div>
