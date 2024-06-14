@@ -87,8 +87,8 @@ const Navbar2 = () => {
 						</li>
 						
 				
-						<div className="border-t-2 border-t-transparent mt-60">
-						<div className="flex gap-2 md:mt-32 border-b-2 pb-2">
+						<div className="border-t-2 border-t-transparent mt-8 ">
+						<div className="flex gap-2 md: mt-80 border-b-2 pb-2">
 							<div className="flex gap-">
 						</div>
 						</div>
