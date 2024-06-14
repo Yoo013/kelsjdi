@@ -86,24 +86,17 @@ const Navbar2 = () => {
 							</a>
 						</li>
 						
-					<div className="border-t-2 border-t-transparent mt-64 ">
-						<div className="flex gap-2  border-b-2  pb-2 mt-5">
-							<div className="flex gap-3  ">
+				
+						<div className="border-t-2 border-t-transparent mt-60">
+						<div className="flex gap-2 md:mt-32 border-b-2 pb-2">
+							<div className="flex gap-">
 						</div>
 						</div>
 						
-						{
-                userLoggedIn
-                    ?
-                    <div className="flex items-center mt-2" id="logout">
-						<CiLogin className="w-5 h-5"/>
-                        <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='font-semibold text-sm ml-1'>Login</button>
-                    </div>
-                    :
-                    <>
-                      
-                    </>
-            }
+						<div  className="flex items-center mt-2">
+						<Link to="/login"><CiLogout className="w-5 h-5" id="logout"/></Link>
+						<h1 className="ml-1 font-semibold text-sm">Login</h1>
+						</div>
 						</div>
 					
 
